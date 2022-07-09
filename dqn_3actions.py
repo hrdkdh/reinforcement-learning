@@ -380,10 +380,10 @@ model_path = "model_pred_220701_3actions.h5"
 trainer = ModelTrainer(
     df_train,
     model_path=model_path,
-    episodes=10000,
+    episodes=5000,
     episode_start = 1,
-    profit_rate_goal=30.0,
-    profit_rate_under_limit=0.8,
+    profit_rate_goal=50.0,
+    profit_rate_under_limit=0.9,
     egreedy = True
 )
 trainer.makeStateList()
