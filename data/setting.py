@@ -139,7 +139,11 @@ for file in os.listdir():
         except:
             print("!!!데이터 파일 복사실패!!! : {}".format(file))
 
-#세팅파일 삭제
-# shutil.rmtree(r"C:\Users\poscoedu_ph\Desktop\setting")
+#다른 파이썬 버전이 설치되어 있는지 체크
+for file in os.listdir(r"c:\Users\poscouser\AppData\Local\Programs\Python"):
+    if file != "Python38":
+        print("!!!!! 파이썬 3.8 외 다른 버전 존재 : {} !!!!!".format(file))
+    else:
+        print("설치된 파이썬 버전 : {}".format(file))
 
 os.system("pause")
