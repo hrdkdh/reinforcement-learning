@@ -1,3 +1,4 @@
 python setting.py
-cd D:\ìž‘ì—…ë°©\
+D:
+cd ÀÛ¾÷¹æ
 jupyter-notebook
